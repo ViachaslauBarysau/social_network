@@ -1,0 +1,58 @@
+[
+  {
+    "id": 2,
+    "name": "John",
+    "interests": [
+      {
+        "id": 3,
+        "name": "Books"
+      },
+      {
+        "id": 4,
+        "name": "Cooking"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Jack",
+    "interests": [
+      {
+        "id": 2,
+        "name": "Music"
+      },
+      {
+        "id": 1,
+        "name": "Cars"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Fiona",
+    "interests": [
+      {
+        "id": 2,
+        "name": "Music"
+      },
+      {
+        "id": 4,
+        "name": "Cooking"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Frank",
+    "interests": [
+      {
+        "id": 3,
+        "name": "Books"
+      },
+      {
+        "id": 1,
+        "name": "Cars"
+      }
+    ]
+  }
+]
