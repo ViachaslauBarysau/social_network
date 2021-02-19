@@ -13,8 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class PairDto {
-    UserDto firstUser;
-    UserDto secondUser;
-    List<InterestDto> interests = new ArrayList<>();
-    int strengthOfConnection;
+    private UserDto firstUser;
+    private UserDto secondUser;
+    private List<InterestDto> interests = new ArrayList<>();
+    private int strengthOfConnection;
 }

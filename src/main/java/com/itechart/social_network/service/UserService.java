@@ -8,4 +8,6 @@ import java.util.List;
 
 public interface UserService {
     List<UserDto> getUsers() throws IOException;
+    UserDto createUser(UserDto userDto);
+    Long delete(UserDto userDto);
 }

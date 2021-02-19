@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDto {
-    Long id;
-    String name;
-    List<InterestDto> interests = new ArrayList<>();
+    private Long id;
+    private String name;
+    private List<InterestDto> interests = new ArrayList<>();
 }
