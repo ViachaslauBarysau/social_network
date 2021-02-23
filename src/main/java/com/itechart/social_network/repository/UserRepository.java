@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface UserRepository {
     List<User> findAll() throws IOException;
+    User save(User user);
+    void delete(User user);
 }

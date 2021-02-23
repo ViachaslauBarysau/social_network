@@ -18,14 +18,14 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    private Long id;
     @Column(name = "name")
-    String name;
-    @ManyToMany(cascade = {CascadeType.ALL})
+    private String name;
+    @ManyToMany(cascade = {CascadeType.MERGE}, targetEntity = Interest.class)
     @JoinTable(
             name = "users_interests",
             joinColumns = {@JoinColumn(name = "user_id")},
             inverseJoinColumns = {@JoinColumn(name = "interest_id")}
     )
-    List<Interest> interests = new ArrayList<>();
+    private List<Interest> interests = new ArrayList<>();
 }

@@ -8,16 +8,28 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.ResourceUtils;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import static com.itechart.social_network.constant.Constants.*;
+
 @Repository
-@ConditionalOnProperty(prefix = "repository", name = "implementation", havingValue = "json")
+@ConditionalOnProperty(prefix = REPOSITORY, name = IMPLEMENTATION, havingValue = JSON)
 public class UserJsonRepositoryImpl implements UserRepository {
     @Override
     public List<User> findAll() throws IOException {
-        return new ObjectMapper().readValue(ResourceUtils.getFile("classpath:users.json"), new TypeReference<>() {
-        });
+        return new ObjectMapper()
+                .readValue(ResourceUtils.getFile(CLASSPATH + DOUBLE_DOT + USERS + DOT + JSON),
+                        new TypeReference<>() {
+                        });
+    }
+
+    @Override
+    public User save(User user) {
+        return null;
+    }
+
+    @Override
+    public void delete(User user) {
     }
 }

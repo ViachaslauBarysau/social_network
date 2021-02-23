@@ -7,8 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-@ConditionalOnProperty(prefix = "repository", name = "implementation", havingValue = "data")
+import static com.itechart.social_network.constant.Constants.*;
+
+@ConditionalOnProperty(prefix = REPOSITORY, name = IMPLEMENTATION, havingValue = DATA)
 @Primary
 public interface UserSpringDataRepository extends UserRepository, JpaRepository<User, Long> {
-    List<User> findAll();
 }
