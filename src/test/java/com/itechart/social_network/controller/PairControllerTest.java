@@ -63,6 +63,7 @@ public class PairControllerTest extends ControllerTest {
                 .interests(new ArrayList<>(Collections.singletonList(testInterestDto)))
                 .strengthOfConnection(STRENGTH_OF_CONNECTION)
                 .build();
+        //Test comment
     }
 
     private UserDto getTestUser(InterestDto testInterestDto, String testUserName) throws JsonProcessingException {
