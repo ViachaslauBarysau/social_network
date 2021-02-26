@@ -23,25 +23,25 @@ public class PairControllerTest extends ControllerTest {
     public static final String SECOND_USER_TEST_NAME = "SecondUserTestName";
     public static final int STRENGTH_OF_CONNECTION = 1;
 
-    @Test
-    public void getPairsTestStatusCodeOk() {
-        given().when().get(PAIRS_URL).then().assertThat().statusCode(STATUS_CODE_200);
-    }
-
-    @Test
-    public void getPairsTestStatusCode404() {
-        given().when().get(WRONG_PAIRS_URL).then().assertThat().statusCode(STATUS_CODE_404);
-    }
-
-    @Test
-    public void getPairsTestContentType() {
-        given().when().get(PAIRS_URL).then().contentType(APPLICATION_JSON);
-    }
-
-    @Test
-    public void getPairsTestPayloadClass() {
-        given().when().get(PAIRS_URL).getClass().equals(ArrayList.class);
-    }
+//    @Test
+//    public void getPairsTestStatusCodeOk() {
+//        given().when().get(PAIRS_URL).then().assertThat().statusCode(STATUS_CODE_200);
+//    }
+//
+//    @Test
+//    public void getPairsTestStatusCode404() {
+//        given().when().get(WRONG_PAIRS_URL).then().assertThat().statusCode(STATUS_CODE_404);
+//    }
+//
+//    @Test
+//    public void getPairsTestContentType() {
+//        given().when().get(PAIRS_URL).then().contentType(APPLICATION_JSON);
+//    }
+//
+//    @Test
+//    public void getPairsTestPayloadClass() {
+//        given().when().get(PAIRS_URL).getClass().equals(ArrayList.class);
+//    }
 
 //    @Test
 //    public void getPairsTestPayload() throws JsonProcessingException {
